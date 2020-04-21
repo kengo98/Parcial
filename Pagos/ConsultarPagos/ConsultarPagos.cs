@@ -1,4 +1,4 @@
-namespace ConsultarPendienteDePagos
+namespace ConsultarPagos
 {
     using System;
     using System.IO;
@@ -12,16 +12,16 @@ namespace ConsultarPendienteDePagos
     using InsertarPendienteDePagos.Helpers;
     using InsertarPendienteDePagos.Models;
 
-    public static class ConsultarPendienteDePAgos
+    public static class ConsultarPagos
     {
-        [FunctionName(nameof(ConsultarPendienteDePAgos))]
+        [FunctionName(nameof(ConsultarPagos))]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "Consultar/{id}")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "ConsultarPago/{id}")] HttpRequest req,
             [CosmosDB(
                 databaseName: Constantes.COSMOS_DB_DATABASE_NAME,
                 collectionName: Constantes.COSMOS_DB_CONTAINER_NAME,
                 ConnectionStringSetting = "StrCosmos",
-                SqlQuery ="SELECT * FROM c WHERE c.idCliente={id} and c.pagado = false")] IEnumerable<Pagos> productItem,
+                SqlQuery ="SELECT * FROM c WHERE c.idCliente={id} and c.pagado = true")] IEnumerable<Pagos> productItem,
             ILogger log,
             string id)
         {

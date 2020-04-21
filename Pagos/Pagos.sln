@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultarPendienteDePagos",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagarCompra", "PagarCompra\PagarCompra.csproj", "{06012314-5277-40A2-B35F-D38D4B6DF754}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultarPagos", "ConsultarPagos\ConsultarPagos.csproj", "{AD8B214D-BE92-46BD-8970-1D98C90495D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliminarPendienteDePagos", "EliminarPendienteDePagos\EliminarPendienteDePagos.csproj", "{DCFF806F-44EA-455E-967A-08829374B539}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{06012314-5277-40A2-B35F-D38D4B6DF754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06012314-5277-40A2-B35F-D38D4B6DF754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06012314-5277-40A2-B35F-D38D4B6DF754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8B214D-BE92-46BD-8970-1D98C90495D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8B214D-BE92-46BD-8970-1D98C90495D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8B214D-BE92-46BD-8970-1D98C90495D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8B214D-BE92-46BD-8970-1D98C90495D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCFF806F-44EA-455E-967A-08829374B539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCFF806F-44EA-455E-967A-08829374B539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCFF806F-44EA-455E-967A-08829374B539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCFF806F-44EA-455E-967A-08829374B539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
